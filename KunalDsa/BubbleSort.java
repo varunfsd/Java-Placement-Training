@@ -1,4 +1,4 @@
-package KunalDsa;
+package kunaldsa;
 
 public class BubbleSort {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Arrays;
+package arrays;
 import java.util.*;
 public class SlidingWindow {
     public static void main(String[] args){

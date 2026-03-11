@@ -1,16 +1,18 @@
-package Patterns;
+package patterns;
+
 import java.util.*;
+
 public class InvertPyramid {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int n;
         System.out.print("enter The Pyramid Height:-");
-        n=sc.nextInt();
-        for(int i=0;i<n;i++){
-            for(int j=0;j<i;j++){
+        n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
                 System.out.print(" ");
             }
-            for(int k=i;k<n;k++){
+            for (int k = i; k < n; k++) {
                 System.out.print("* ");
             }
             System.out.println();

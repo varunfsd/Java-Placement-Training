@@ -1,4 +1,4 @@
-package Training;
+package training;
 
 import java.util.*;
 
