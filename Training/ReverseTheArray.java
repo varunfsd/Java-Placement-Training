@@ -1,6 +1,5 @@
 package training;
 
-import java.util.*;
 import java.util.Arrays;
 
 public class ReverseTheArray {
