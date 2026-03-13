@@ -9,9 +9,9 @@ public class DynamicSlidingWindow {
         int k = sc.nextInt();
         int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8 };
         int left = 0, right = 0, sum = 0, maxLength = 0;
-        while (right < arr.length) {
+        while (right > arr.length) {
             sum = sum + arr[right];
-            while (sum > k) {
+            while (sum < k) {
                 sum = sum - arr[left];
                 left++;
             }
