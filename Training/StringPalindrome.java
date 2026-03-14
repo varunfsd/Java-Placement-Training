@@ -11,6 +11,12 @@ public class StringPalindrome {
         int leftPointer = 0, rightPointer = str.length() - 1;
         boolean isPalindrome = true;
         while (leftPointer < rightPointer) {
+            while (leftPointer < str.length() && !Character.isLetterOrDigit(str.charAt(leftPointer))) {
+                leftPointer++;
+            }
+            while (rightPointer >= 0 && !Character.isLetterOrDigit(str.charAt(rightPointer))) {
+                rightPointer--;
+            }
             if (str.charAt(leftPointer) != str.charAt(rightPointer)) {
                 isPalindrome = false;
                 break;
