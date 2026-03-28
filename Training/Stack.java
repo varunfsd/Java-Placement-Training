@@ -45,8 +45,6 @@ public class Stack {
         System.out.print("Enter The Parenthesis String:-");
         char[] cr = sc.nextLine().trim().toCharArray();
 
-        boolean isValid = true;
-
         for (int i = 0; i < cr.length; i++) {
             char c = cr[i];
 
@@ -55,7 +53,6 @@ public class Stack {
             } else if (c == ')' || c == '}' || c == ']') {
 
                 if (st.isEmpty()) {
-                    isValid = false;
                     break;
                 }
 
@@ -76,5 +73,6 @@ public class Stack {
         else {
             System.out.println("Invalid Parenthesis");
         }
+        sc.close();
     }
 }
