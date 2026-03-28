@@ -9,3 +9,4 @@ public class MinNoCoins {
         int sum = sc.nextInt();
     }
 }
+ 
