@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class StaircaseProblem {
     public static int staircaseProblem(int n, int[] dp) {
         if (n <= 1) {
-            return n;
+            return 1;
         }
         if (dp[n] != -1) {
             return dp[n];

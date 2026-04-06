@@ -8,7 +8,7 @@ public class PrimsAlgo {
         System.out.print("Enter The No of Vertices: -");
         int v = sc.nextInt();
         int[][] mat = new int[v][v];
-    c.close();
+        sc.close();
         System.out.println();
     }
 }
