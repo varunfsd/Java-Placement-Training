@@ -5,10 +5,11 @@ import java.util.ArrayList;
 public class FindAllIndexes {
 
     public static ArrayList<Integer> findAllIndex(int[] arr, int target) {
-        return findAllIndexHelper(arr, target, 0, new ArrayList<>());
+        return findAllIndexHelper(arr, target, 0);
     }
 
-    public static ArrayList<Integer> findAllIndexHelper(int[] arr, int target, int ind, ArrayList<Integer> list) {
+    public static ArrayList<Integer> findAllIndexHelper(int[] arr, int target, int ind) {
+        ArrayList<Integer> list = new ArrayList<>();
         if (ind == arr.length) {
             return list;
         }
@@ -16,8 +17,9 @@ public class FindAllIndexes {
         if (arr[ind] == target) {
             list.add(ind);
         }
-
-        return findAllIndexHelper(arr, target, ind + 1, list);
+        ArrayList<Integer> temp = findAllIndexHelper(arr, target, ind + 1);
+        list.addAll(temp);
+        return list;
     }
 
     public static void main(String[] args) {
