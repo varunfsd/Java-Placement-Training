@@ -1,6 +1,6 @@
 package training;
 
-public class   {
+public class PairsWithDifferenceK {
     public static void main(String[] args) {
         int[] arr = { -3, 0, 1, 3, 6, 8, 11, 14, 21, 25 };
         int left = 0, right = 1;
