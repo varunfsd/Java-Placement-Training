@@ -1,6 +1,6 @@
 package training;
 
-public class TwoSuBruteForce {
+public class TwoSumBruteForce {
     public static void main(String[] args) {
         int[] arr = { 3, 7, 2, 9, 6, 1, 7, 8, 56 };
         int target = 65;
